@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "104714648369",
+    "project_id": "firebase-christmasshopping"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:104714648369:android:cfcd4f87a132a0e9",
+        "android_client_info": {
+          "package_name": "com.example.dee.christmasshopping"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "104714648369-6uc4fdtlg8igv6pqpvv2tabfae2mh755.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "104714648369-d2n7oplelvg2s7ai7jb2ra6bk2pn16r2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dee.christmasshopping",
+            "certificate_hash": "6ee08c129b2c52b92ce430225339a643c90688ec"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVqQJ_J9JpCmie3XgC_Rfpsh13UI3pfew"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
