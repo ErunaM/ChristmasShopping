@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.dee.christmasshopping.SignedIn">
+    tools:context="com.example.dee.christmasshopping.SignedIn"
+    android:background="@drawable/background2">
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/profilePicture"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/Name"
+        android:text="Yas"
+        android:typeface="serif"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="#870000"
+        android:padding="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,5 +1,6 @@
 package com.example.dee.christmasshopping;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -14,6 +15,8 @@ import com.google.android.gms.auth.api.signin.GoogleSignInResult;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.GoogleApiClient;
+
+import java.io.Serializable;
 
 public class MainActivity extends AppCompatActivity  implements
         GoogleApiClient.OnConnectionFailedListener,
@@ -56,7 +59,12 @@ public class MainActivity extends AppCompatActivity  implements
             // Signed in successfully, show authenticated UI.
             GoogleSignInAccount acct = result.getSignInAccount();
             // Go to Next Activity
-            Intent intent = new Intent();
+            Intent intent = new Intent(this, SignedIn.class);
+
+            intent.putExtra("UserName", acct.getDisplayName());
+            intent.putExtra("Email", acct.getEmail());
+            intent.putExtra("Picture", acct.getPhotoUrl());
+            startActivity(intent);
 
         } else {
             // Signed out, show unauthenticated UI.
