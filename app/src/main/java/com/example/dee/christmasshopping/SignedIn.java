@@ -9,6 +9,9 @@ import android.widget.TextView;
 
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+
 public class SignedIn extends AppCompatActivity {
     private TextView TVname,TVemail;
     private ImageView profilePicture;
@@ -23,8 +26,9 @@ public class SignedIn extends AppCompatActivity {
         profilePicture = (ImageView)findViewById(R.id.profilePicture);
         TVname = (TextView)findViewById(R.id.Name);
         name = getIntent().getStringExtra("UserName");
-        //Uri uri = Uri.parse(getIntent().getStringExtra("Picture"));
-        //profilePicture.setImageURI(uri);
+        String url = getIntent().getStringExtra("Picture");
+
+
         TVname.setText(name);
         //profilePicture.setImageURI();
 

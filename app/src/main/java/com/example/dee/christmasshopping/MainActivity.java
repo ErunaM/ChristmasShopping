@@ -97,4 +97,14 @@ public class MainActivity extends AppCompatActivity  implements
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
 
     }
+
+    public void OnLogin(View view)
+    {
+        String ID = "";
+        String name = "";
+        String type = "login";
+        BackgroundWorker backgroundWorker = new BackgroundWorker(this);
+        backgroundWorker.execute(type,name,ID);
+
+    }
 }
